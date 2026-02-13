@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+    <script type="text/babel">
+         function abc(){
+           var a= document.getElementById("d1").value
+            var b= document.getElementById("d2").value
+                document.getElementById("dd").innerHTML=a*b
+         }
+         function pqr(){
+            var o=+document.getElementById("d1").value
+            var p=+document.getElementById("d2").value
+            document.getElementById("dd").innerHTML=o/p
+
+         } 
+         var j=<div>
+             <input id="d1" type="text"/> <br/>
+             <input id="d2" type="text"/> <br/>
+             <button onClick={abc}>Multiplecation</button> 
+             <button onClick={pqr}>dev</button>
+             <h1 id="dd"></h1>
+            </div>
+            ReactDOM.render(j,document.getElementById("root"))
+    </script>
+</html>
